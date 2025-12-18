@@ -8,3 +8,5 @@
       - internal
     depends_on:
       - app
+    volumes:
+      - ./import:/import
