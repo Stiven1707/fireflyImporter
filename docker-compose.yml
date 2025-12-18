@@ -1,0 +1,10 @@
+  importer:
+    image: fireflyiii/data-importer:latest
+    container_name: firefly_iii_importer
+    restart: unless-stopped
+    env_file: .importer.env
+    networks:
+      - proxy
+      - internal
+    depends_on:
+      - app
